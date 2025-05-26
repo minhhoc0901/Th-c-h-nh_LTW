@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MinhHoc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+470fd8e81398089d4bcd1d2283d1127d74c7ac7e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MinhHoc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MinhHoc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
