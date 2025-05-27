@@ -1,0 +1,56 @@
+﻿@model IEnumerable<LeMinhHoc.Models.Product>
+<h2>Products</h2>
+<a asp-action="Add" class="btn btn-primary mb-3">
+	<i class="bi bi-plus"></i> Thêm sản phẩm mới
+</a>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Tên</th>
+			<th>Giá</th>
+			<th>Mô tả</th>
+			<th>Ảnh</th>
+			<th>Loại</th>
+			<th>Chức năng</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var product in Model)
+		{
+			<tr>
+				<td>@product.Name</td>
+				<td>@product.Price</td>
+				<td>@product.Description</td>
+				
+				<td>
+					@if (!string.IsNullOrEmpty(product.ImageUrl))
+					{
+						<img src="@product.ImageUrl" alt="Product Image" style="max-width: 100px;" />
+					}
+				</td>
+				<td>@product.Category?.Name</td>
+				@* <td> *@
+				
+				@* 	<a asp-action="Display" asp-route-id="@product.Id">View</a>  *@
+				@* 	<a asp-action="Update" asp-route-id="@product.Id">Edit</a>  *@
+				@* 	<a asp-action="Delete" asp-route-id="@product.Id">Delete</a> *@
+				@* </td> *@
+				<td>
+					<a asp-action="Display" asp-route-id="@product.Id"
+					   class="btn btn-info btn-sm me-2">
+						<i class="bi bi-eye"></i> View
+					</a>
+					<a asp-action="Update" asp-route-id="@product.Id"
+					   class="btn btn-warning btn-sm me-2">
+						<i class="bi bi-pencil"></i> Edit
+					</a>
+					<a asp-action="Delete" asp-route-id="@product.Id"
+					   class="btn btn-danger btn-sm">
+						<i class="bi bi-trash"></i> Delete
+					</a>
+				</td>
+
+			</tr>
+		}
+	</tbody>
+</table>

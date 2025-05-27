@@ -1,0 +1,102 @@
+﻿@model LeMinhHoc.Models.Product
+
+<div class="product-container">
+    <h2 class="product-title">@Model.Name</h2>
+
+    <div class="product-details">
+        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+        {
+            <div class="product-image">
+                <img src="@Model.ImageUrl" alt="Product Image" />
+            </div>
+        }
+
+        <div class="product-info">
+            <h3 class="info-item">Giá: <span>@Model.Price</span></h3>
+            <h3 class="info-item">Mô tả: <p class="product-description">@Model.Description</p></h3>
+            <h3 class="info-item">Loại: <span>@Model.Category?.Name</span></h3>
+        </div>
+    </div>
+
+    <div class="action-buttons">
+        <a class="btn btn-primary" asp-action="Update" asp-route-id="@Model.Id">Chỉnh sửa</a>
+        <a class="btn btn-secondary" asp-action="Index">Quay lại danh sách</a>
+    </div>
+</div>
+
+<style>
+    .product-container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .product-title {
+        color: #2c3e50;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 0.5rem;
+    }
+
+    .product-details {
+        display: flex;
+        gap: 4rem;
+        flex-wrap: wrap;
+    }
+
+    .product-image {
+        flex: 0 0 300px;
+    }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+    .product-info {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .info-item {
+        color: #34495e;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+        .info-item span {
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+
+    .product-description {
+        color: #666;
+        line-height: 1.6;
+        display: inline;
+       
+    }
+
+    .action-buttons {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1.5rem;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+        background: #3498db;
+        color: white;
+    }
+</style>
