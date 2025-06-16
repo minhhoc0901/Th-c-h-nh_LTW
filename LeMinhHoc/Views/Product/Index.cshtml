@@ -1,6 +1,6 @@
-﻿@model IEnumerable<LeMinhHoc.Models.Product>
-<h2>Products</h2>
-<a asp-action="Add" class="btn btn-primary mb-3">
+﻿@* @model IEnumerable<LeMinhHoc.Models.Product>
+
+<a asp-action="Add" class="btn btn-primary mb-3 mt-2">
 	<i class="bi bi-plus"></i> Thêm sản phẩm mới
 </a>
 <table class="table">
@@ -29,12 +29,7 @@
 					}
 				</td>
 				<td>@product.Category?.Name</td>
-				@* <td> *@
-				
-				@* 	<a asp-action="Display" asp-route-id="@product.Id">View</a>  *@
-				@* 	<a asp-action="Update" asp-route-id="@product.Id">Edit</a>  *@
-				@* 	<a asp-action="Delete" asp-route-id="@product.Id">Delete</a> *@
-				@* </td> *@
+			
 				<td>
 					<a asp-action="Display" asp-route-id="@product.Id"
 					   class="btn btn-info btn-sm me-2">
@@ -53,4 +48,42 @@
 			</tr>
 		}
 	</tbody>
-</table>
+</table> *@
+
+@model IEnumerable<LeMinhHoc.Models.Product>
+@{
+		ViewData["Title"] = "Trang Chủ";
+    int numOfQuantity = 1;
+}
+<section class="py-2">
+<div class="container px-4 px-lg-5 mt-5">
+	<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justifycontent-center">
+
+		@foreach (var item in Model)
+		{
+			<div class="col mb-5">
+				<div class="card gap-3" style="width: 18rem">
+					<img src="@item.ImageUrl" class="card-img-top" alt="..."
+						 style="height: 300px">
+					<div class="card-body">
+						<h5 class="card-title">
+							@Html.DisplayFor(modelItem =>
+							item.Name)
+					</h5>
+					<div class="d-flex">
+						<span>Price: </span>
+						<p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+					</div>
+						<a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id"
+						   asp-route-quantity="@numOfQuantity">
+							<button class="btn btn-outline-dark">
+								<i class="bi-cart-fill me-1"></i> Add to Cart
+							</button>
+						</a>
+				</div>
+			</div>
+		</div>
+				}
+	</div>
+</div>
+</section>

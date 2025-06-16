@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using LeMinhHoc.Extensions
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/LeMinhHoc.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header class="bg-success text-white text-center py-4">
@@ -38,6 +39,30 @@
                         <a class="nav-link" href="#">Liên Hệ</a>
                     </li>
                 </ul>
+                
+                 <div class="d-flex ms-auto align-items-center">
+                    <form class="d-flex me-3">
+                        <a href="~/ShoppingCart" class="text-decoration-none">
+                            <button type="button" class="btn btn-outline-light px-4 position-relative">
+                                <i class="bi-cart-fill me-2"></i>
+                                Cart
+                                @{
+                                    var cart = Context.Session.GetObjectFromJson<ShoppingCart>("Cart");
+                                    var itemCount = cart?.Items.Sum(i => i.Quantity) ?? 0;
+                                    if (itemCount > 0)
+                                    {
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            @itemCount
+                                            <span class="visually-hidden">items in cart</span>
+                                        </span>
+                                    }
+                                }
+                            </button>
+                        </a>
+                    </form>
+                    <partial name="_LoginPartial" />
+                </div>
+               
             </div>
         </div>
     </nav>

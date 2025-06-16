@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|f:\\bt_web\\leminhhoc\\th-c-h-nh_ltw\\leminhhoc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|solutionrelative:leminhhoc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|f:\\bt_web\\leminhhoc\\th-c-h-nh_ltw\\leminhhoc\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|solutionrelative:leminhhoc\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|f:\\bt_web\\leminhhoc\\th-c-h-nh_ltw\\leminhhoc\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|solutionrelative:leminhhoc\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|f:\\bt_web\\leminhhoc\\th-c-h-nh_ltw\\leminhhoc\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|solutionrelative:leminhhoc\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|f:\\bt_web\\leminhhoc\\th-c-h-nh_ltw\\leminhhoc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|solutionrelative:leminhhoc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|f:\\bt_web\\leminhhoc\\th-c-h-nh_ltw\\leminhhoc\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|solutionrelative:leminhhoc\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|f:\\bt_web\\leminhhoc\\th-c-h-nh_ltw\\leminhhoc\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|solutionrelative:leminhhoc\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|f:\\bt_web\\leminhhoc\\th-c-h-nh_ltw\\leminhhoc\\views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AE85FB5-5179-4431-BFD7-ECCFF64B8908}|LeMinhHoc\\LeMinhHoc.csproj|solutionrelative:leminhhoc\\views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeDocumentMoniker": "LeMinhHoc\\Views\\ShoppingCart\\Index.cshtml",
+              "ToolTip": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeToolTip": "LeMinhHoc\\Views\\ShoppingCart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T01:49:32.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "LeMinhHoc\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "LeMinhHoc\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwFwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T01:43:06.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "LeMinhHoc\\Models\\CartItem.cs",
+              "ToolTip": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Models\\CartItem.cs",
+              "RelativeToolTip": "LeMinhHoc\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T01:40:32.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Program.cs",
+              "RelativeDocumentMoniker": "LeMinhHoc\\Program.cs",
+              "ToolTip": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Program.cs",
+              "RelativeToolTip": "LeMinhHoc\\Program.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAmwEEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T01:37:32.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "LeMinhHoc\\Views\\Product\\Index.cshtml",
+              "ToolTip": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "LeMinhHoc\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAFMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T01:34:43.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LeMinhHoc\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LeMinhHoc\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T01:22:59.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "LeMinhHoc\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ToolTip": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeToolTip": "LeMinhHoc\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwCQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T01:56:53.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderCompleted.cshtml",
+              "DocumentMoniker": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "RelativeDocumentMoniker": "LeMinhHoc\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "ToolTip": "F:\\BT_Web\\LeMinhHoc\\Th-c-h-nh_LTW\\LeMinhHoc\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "RelativeToolTip": "LeMinhHoc\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T01:59:03.978Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

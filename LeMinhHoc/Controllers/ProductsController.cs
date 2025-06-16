@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LeMinhHoc.Models;
 using LeMinhHoc.Repositories;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LeMinhHoc.Controllers
 {
+   
     public class ProductController : Controller
     {
         private readonly IProductRepository _productRepository;
@@ -28,6 +30,8 @@ namespace LeMinhHoc.Controllers
             return View(products);
         }
         // Hiển thị form thêm sản phẩm mới
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Add()
         {
             var categories = await _categoryRepository.GetAllAsync();
@@ -36,6 +40,7 @@ namespace LeMinhHoc.Controllers
         }
         // Xử lý thêm sản phẩm mới
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Add(Product product, IFormFile
        imageUrl)
         {
@@ -66,7 +71,8 @@ namespace LeMinhHoc.Controllers
             return "/images/" + image.FileName; // Trả về đường dẫn tương đối
         }
 
-          // Hiển thị thông tin chi tiết sản phẩm
+        // Hiển thị thông tin chi tiết sản phẩm
+        //[Authorize]
         public async Task<IActionResult> Display(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
@@ -77,6 +83,7 @@ namespace LeMinhHoc.Controllers
             return View(product);
         }
         // Hiển thị form cập nhật sản phẩm
+        [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Update(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
@@ -91,6 +98,7 @@ namespace LeMinhHoc.Controllers
         }
         // Xử lý cập nhật sản phẩm
         [HttpPost]
+        [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Update(int id, Product product,
        IFormFile imageUrl)
         {
@@ -128,6 +136,7 @@ namespace LeMinhHoc.Controllers
             return View(product);
         }
         // Hiển thị form xác nhận xóa sản phẩm
+        [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Delete(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
@@ -139,6 +148,7 @@ namespace LeMinhHoc.Controllers
         }
         // Xử lý xóa sản phẩm
         [HttpPost, ActionName("DeleteConfirmed")]
+        [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             await _productRepository.DeleteAsync(id);
